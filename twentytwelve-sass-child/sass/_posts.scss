@@ -1,0 +1,22 @@
+/* 
+Styling specifically for posts:
+Changes colors & borders
+*/
+
+.site-content {
+    article {
+        border-bottom: $border-double;
+    }
+}
+
+.entry-header {
+    .entry-title {
+    	// Call links mixin to set link styles
+        @include links($entry-title-color);
+    }
+}
+
+.entry-header, .entry-meta {
+	// Call links mixin to set link styles
+    @include links();
+}

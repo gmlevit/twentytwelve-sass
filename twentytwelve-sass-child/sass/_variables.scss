@@ -1,0 +1,67 @@
+// Color Variables
+$white: #fff;
+$gray: #666;
+$gray-dark: #333;
+$gray-light: #eee;
+
+// Greens
+$green-medium: #29423f; // Base color
+
+// Color formulas
+$green-dark: darken($green-medium, 10%);
+$green-light: lighten($green-medium, 10%);
+
+// Complementary color: salmon red
+$complement-color: adjust-hue($green-medium, 180deg);
+
+// Combine 2 formulas to create a darker complementary color
+$complement-dark: darken(adjust-hue($green-medium, 180deg), 10%);
+
+// Combine 2 formuls to create 3 different lighter complements
+$complement-light: lighten(adjust-hue($green-medium, 180deg), 40%);
+$complement-lighter: lighten(adjust-hue($green-medium, 180deg), 65%);
+$complement-lightest: lighten(adjust-hue($green-medium, 180deg), 85%);
+
+// Color Styling 
+// Content
+$body-background-color: $green-medium;
+$body-color: $gray-light;
+$content-background-color: $green-dark;
+ 
+// Header
+$site-title-color: $gray-light;
+$site-title-color-hover: $complement-light;
+$site-description-color: $gray-light;
+ 
+// Links
+$links-color: $complement-lighter;
+$links-color-hover: $complement-light;
+$links-color-visited: $complement-light;
+ 
+// Navigation
+$site-nav-color: $complement-lighter;
+$main-nav-color: $complement-lighter;
+$menu-items-color: $complement-lighter;
+$menu-items-color-hover: $complement-light;
+$menu-items-color-active: $white;
+ 
+// Posts
+$entry-title-color: $white;
+ 
+// Widgets
+$search-form-background-color: $gray;
+$search-form-border-color: $gray;
+$search-form-text-color: $white;
+
+// Forms
+$input-background: $complement-lightest;
+
+// Padding
+$sidebar-padding: 20px;
+
+// Borders
+$border-color: $green-light;
+$border-color-double: $complement-color;
+
+$border-single: 1px solid $border-color;
+$border-double: 4px double $border-color-double;

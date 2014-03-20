@@ -1,0 +1,24 @@
+// Keep all of the navigation styles together to edit menus quickly
+
+/* top menu nav style */
+.main-navigation {
+    ul.nav-menu {
+            border: {
+                top: $border-single;
+                bottom: $border-single;
+            }
+    }
+
+    li {
+        // Call links mixin to set link styles
+        @include links($menu-items-color, $menu-items-color-hover);
+    }
+    .current-menu-item,
+    .current-menu-ancestor,
+    .current_page_item,
+    .current_page_ancestor {
+	    a {
+	        color: $menu-items-color-active;
+	    }
+	}
+}

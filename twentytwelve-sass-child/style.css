@@ -1,0 +1,125 @@
+/*
+Theme Name:     TwentyTwelve SASS Child
+Theme URI:      http://JacarandaTech.com
+Description:    TwentyTwelve Child theme using SASS
+Author:         Gabriela Levit
+Author URI:     http://JacarandaTech.com
+Template:       twentytwelve
+Version:        1.0
+*/
+/*
+ Misc. stylings. E.G. body & links. 
+ You can nest styles to follow the HTML hierarchy
+
+ Sets gradients AND box-shadows for that 90s style :)
+ If you like it, it's OK too. :)
+*/
+body {
+  color: #eeeeee;
+  /* Call gradient mixin to set background color with a gradient */
+  background-color: #3d615d;
+  background-image: -webkit-linear-gradient(top, #3d615d, #152321);
+  background-image: -moz-linear-gradient(top, #3d615d, #152321);
+  background-image: -o-linear-gradient(top, #3d615d, #152321);
+  background-image: -ms-linear-gradient(top, #3d615d, #152321);
+  background-image: linear-gradient(top, #3d615d, #152321); }
+  body .site {
+    background-color: #152321;
+    /* Call box-shadow mixin to set a box shadow */
+    -webkit-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); }
+  body .site-content article {
+    border-bottom: 4px double #42292c; }
+
+body.custom-background {
+  background-color: #29423f !important; }
+
+/* Call links mixin to set link styles */
+a {
+  color: #e4d3d5; }
+  a:hover {
+    color: #b3848a; }
+
+/* Set background color of form inputs */
+button,
+input,
+textarea {
+  background-color: white; }
+
+/* top menu nav style */
+.main-navigation ul.nav-menu {
+  border-top: 1px solid #3d615d;
+  border-bottom: 1px solid #3d615d; }
+.main-navigation li a {
+  color: #e4d3d5; }
+  .main-navigation li a:hover {
+    color: #b3848a; }
+.main-navigation .current-menu-item a,
+.main-navigation .current-menu-ancestor a,
+.main-navigation .current_page_item a,
+.main-navigation .current_page_ancestor a {
+  color: white; }
+
+.site-title a {
+  color: #eeeeee; }
+
+.site-header h1 a, .site-header h2 a {
+  color: #eeeeee; }
+  .site-header h1 a:hover, .site-header h2 a:hover {
+    color: #b3848a; }
+.site-header h2 {
+  color: #eeeeee; }
+
+/* 
+Styling specifically for posts:
+Changes colors & borders
+*/
+.site-content article {
+  border-bottom: 4px double #42292c; }
+
+.entry-header .entry-title a {
+  color: white; }
+  .entry-header .entry-title a:hover {
+    color: #b3848a; }
+
+.entry-header a, .entry-meta a {
+  color: #e4d3d5; }
+  .entry-header a:hover, .entry-meta a:hover {
+    color: #b3848a; }
+
+/* styling specifically for pages only (as opposed to posts) */
+.entry-header .entry-title {
+  color: white; }
+
+/* 
+sidebar-specific styling
+*/
+/* Adds border to the left of the sidebar */
+#secondary {
+  border-left: 1px solid #3d615d;
+  padding-left: 20px; }
+
+/* 
+widgets-specific styling:
+Styling for the container around the widgets (sidebar) in _sidebar.sass.
+*/
+/* Make the widget links match the other links in the child theme */
+.widget-area .widget .widget-title {
+  color: #eeeeee; }
+.widget-area .widget a {
+  color: #e4d3d5; }
+  .widget-area .widget a:hover {
+    color: #b3848a; }
+
+/* Search form styling: change the colors */
+#s, #searchsubmit {
+  background: #666666;
+  border-color: #666666;
+  color: white; }
+
+/* styling for the child theme's footer */
+footer[role="contentinfo"] a {
+  color: #e4d3d5; }
+  footer[role="contentinfo"] a:hover {
+    color: #b3848a; }

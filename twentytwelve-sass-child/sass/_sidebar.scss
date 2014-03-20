@@ -1,0 +1,12 @@
+/* 
+sidebar-specific styling
+*/
+
+/* Adds border to the left of the sidebar */
+#secondary {
+    border: {
+    	left: $border-single;
+    }
+    // Adds padding
+    padding-left: $sidebar-padding;
+}

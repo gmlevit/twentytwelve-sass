@@ -1,0 +1,17 @@
+// header styles for site title and description
+
+// nest a under .site-title?
+.site-title a {
+    color: $site-title-color;
+}
+
+// h1 & h2 nested under .site-header
+.site-header {
+    h1, h2 {
+        @include links($site-title-color, $site-title-color-hover);
+    }
+
+    h2 {
+        color: $site-description-color;
+    }
+}

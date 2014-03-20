@@ -1,0 +1,5 @@
+/* styling for the child theme's footer */
+footer[role="contentinfo"] {
+	// Call links mixin to set link styles
+    @include links();
+}

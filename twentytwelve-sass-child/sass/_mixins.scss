@@ -1,0 +1,70 @@
+// Returns rounded corners styling based on the parameters passed to it.
+// If it's called without parameters, it sets the border-radius to its default value
+ 
+// Parameters:
+// radius - default value: 3px
+@mixin border-radius ($radius: 3px) {
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    -ms-border-radius: $radius;
+    border-radius: $radius;
+}
+
+
+// Returns link styling (colors) based on the parameters passed to it.
+// If it's called without parameters, 
+// it sets the link styling to the default values
+
+// Parameters:
+// link color - default value: $complement-lighter
+// link hover color - default value: $complement-light
+@mixin links($link-color: $complement-lighter, $link-color-hover: $complement-light) {
+    a {
+        color: $link-color;
+        &:hover {
+            color: $link-color-hover;
+        }
+    }
+}
+
+
+// Sets any type of box-shadow effect
+// If it's called without parameters, the parametes are set to their default values
+
+// Parameters:
+// horizontal offset, 
+// vertical offset, 
+// optional blur distance 
+// optional spread, 
+// an optional color value
+@mixin box-shadow ($horizontal_offset: 0px, $vertical_offset: 3px, $blur: 5px, $spread: 5px, $color:#888) {
+    -webkit-box-shadow: $horizontal_offset $vertical_offset $blur $spread $color;
+    -moz-box-shadow: $horizontal_offset $vertical_offset $blur $spread $color;
+    box-shadow: $horizontal_offset $vertical_offset $blur $spread $color;
+}
+
+
+// Sets quick linear gradients
+
+// Parameters:
+// origin - default value: left 
+// start color - default value: #fff (white)
+// end color - default value: #000 (black)
+@mixin gradient ($origin: left, $start: #fff, $stop: #000) {
+    // This is the same as the code below
+    // background-color: $start;
+    // background-image: -webkit-linear-gradient($origin, $start, $stop);
+    // background-image: -moz-linear-gradient($origin, $start, $stop);
+    // background-image: -o-linear-gradient($origin, $start, $stop);
+    // background-image: -ms-linear-gradient($origin, $start, $stop);
+    // background-image: linear-gradient($origin, $start, $stop);
+
+    background: {
+        color: $start;
+        image: -webkit-linear-gradient($origin, $start, $stop);
+        image: -moz-linear-gradient($origin, $start, $stop);
+        image: -o-linear-gradient($origin, $start, $stop);
+        image: -ms-linear-gradient($origin, $start, $stop);
+        image: linear-gradient($origin, $start, $stop);
+    }
+}

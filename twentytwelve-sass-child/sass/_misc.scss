@@ -1,0 +1,47 @@
+/*
+ Misc. stylings. E.G. body & links. 
+ You can nest styles to follow the HTML hierarchy
+
+ Sets gradients AND box-shadows for that 90s style :)
+ If you like it, it's OK too. :)
+*/
+ 
+body {
+    
+    color: $body-color;
+
+    /* Call gradient mixin to set background color with a gradient */
+    @include gradient(top, $green-light, $content-background-color);
+
+
+    .site {
+        background-color: $content-background-color;
+    	
+        /* Call box-shadow mixin to set a box shadow */
+		@include box-shadow(0, 0, 5px, 5px, rgba(0, 0, 0, 0.5));
+
+    }
+
+
+    .site-content {
+		article {
+			border: {
+				bottom: $border-double;
+			}
+		}
+	}
+}
+
+body.custom-background {
+    background-color: $body-background-color !important;
+}
+
+/* Call links mixin to set link styles */
+@include links();
+
+/* Set background color of form inputs */
+button,
+input,
+textarea {
+	background-color: $input-background;
+}

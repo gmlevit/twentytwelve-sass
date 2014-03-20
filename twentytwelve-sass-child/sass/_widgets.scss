@@ -1,0 +1,22 @@
+/* 
+widgets-specific styling:
+Styling for the container around the widgets (sidebar) in _sidebar.sass.
+*/ 
+
+/* Make the widget links match the other links in the child theme */
+.widget-area{
+    .widget {
+        .widget-title {
+            color: $gray-light;
+        }
+        // Call links mixin to set link styles
+        @include links();
+    }
+}
+ 
+/* Search form styling: change the colors */
+#s, #searchsubmit {
+    background: $search-form-background-color;
+    border-color: $search-form-border-color;
+    color: $white;
+}
