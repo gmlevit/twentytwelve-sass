@@ -8,7 +8,7 @@ Demo code used for the WordPress NYC Meetup Presentation on 3/18/2014:
 Yes, it's a 90s style theme, complete with gradients and box shadows, in lovely shades of green. :)
 
   
-The style is idential to the Twentytwelve LESS Child Theme
+The style is identical to the Twentytwelve LESS Child Theme
 
 ## Initial Commit
 Style.css is only here to register the child theme with WordPress. Already enqueued in functions.php
