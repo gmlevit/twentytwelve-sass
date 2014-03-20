@@ -1,5 +1,5 @@
-# Twentytwelve SASS Child Theme
-### Sample Twentytwelve child theme using SASS.
+# Twentytwelve WordPress SASS Child Theme
+### Sample WordPress Twentytwelve child theme using SASS.
 
 Demo code used for the WordPress NYC Meetup Presentation on 3/18/2014:
 
